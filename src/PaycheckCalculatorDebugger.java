@@ -1,5 +1,5 @@
-// Personal Finance Assistance Software (Debugger Version)
-// Made by and personally designed for Alex Morehead
+// An open-source personal finance assistance software.
+// This version is for debugging in a console-like interface.
 
 import java.util.Scanner;
 import java.math.BigDecimal;

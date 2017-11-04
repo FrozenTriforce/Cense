@@ -1,6 +1,5 @@
-
-// Personal Finance Assistance Software
-// Made by and personally designed for Alex Morehead
+// An open-source personal finance assistance software.
+// This version uses the "Swing" library.
 
 import javax.swing.*;
 import java.math.BigDecimal;

@@ -1,5 +1,5 @@
-// Paycheck Calculation Software
-// Made by and designed personally for Alex Morehead
+// An open-source personal finance assistance software.
+// This version uses the "JavaFX" library.
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
