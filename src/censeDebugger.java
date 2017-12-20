@@ -64,11 +64,8 @@ public class censeDebugger {
         // Calculates the amount to be allotted from savings toward the future trips
         BigDecimal amountForTrips = savingsAmount.multiply(BigDecimal.valueOf(0.13));
 
-        // Calculates the amount to be allotted from savings toward college/graduate school
-        BigDecimal amountForSchool = savingsAmount.multiply(BigDecimal.valueOf(0.01));
-
         // Calculates the amount to be allotted from savings toward a new computer or phone
-        BigDecimal amountForNewComputerOrPhone = savingsAmount.multiply(BigDecimal.valueOf(0.02));
+        BigDecimal amountForNewComputerOrPhone = savingsAmount.multiply(BigDecimal.valueOf(0.03));
 
         // Calculates the amount to be allotted from savings toward yearly subscriptions
         BigDecimal amountForSubscriptions = savingsAmount.multiply(BigDecimal.valueOf(0.03));
@@ -113,21 +110,20 @@ public class censeDebugger {
                         + "2. The amount of savings going toward car maintenance/replacement is $%,4.2f. \n"
                         + "3. The amount of savings going toward your emergency fund is $%,4.2f. \n"
                         + "4. The amount of savings going toward future trips is $%,4.2f. \n"
-                        + "5. The amount of savings going toward college/graduate school is $%,4.2f. \n"
-                        + "6. The amount of savings going toward a new computer or phone is $%,4.2f. \n"
-                        + "7. The amount of savings going toward monthly or yearly subscriptions is $%,4.2f. \n"
-                        + "8. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
+                        + "5. The amount of savings going toward a new computer or phone is $%,4.2f. \n"
+                        + "6. The amount of savings going toward monthly or yearly subscriptions is $%,4.2f. \n"
+                        + "7. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
 
                         + "Please enter the following amounts in the designated spreadsheet (Checking Account): \n"
 
                         + "1. The amount of tithe for this paycheck (10%% of your gross income) is $%,4.2f. \n"
-                        + "1. The amount of spending money going toward the giving fund is $%,4.2f. \n"
-                        + "2. The amount of spending money going toward the gas fund is $%,4.2f. \n"
-                        + "3. The amount of spending money going toward the food fund is $%,4.2f. \n"
-                        + "4. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
-                        + "5. The amount of spending money going toward the entertainment fund is $%,4.2f. \n",
+                        + "2. The amount of spending money going toward the giving fund is $%,4.2f. \n"
+                        + "3. The amount of spending money going toward the gas fund is $%,4.2f. \n"
+                        + "4. The amount of spending money going toward the food fund is $%,4.2f. \n"
+                        + "5. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
+                        + "6. The amount of spending money going toward the entertainment fund is $%,4.2f. \n",
                 savingsAmount, checkingAmount, amountForIRA, amountForCar, amountForEmergency, amountForTrips,
-                amountForSchool, amountForNewComputerOrPhone, amountForSubscriptions, amountForMusic, titheAmount,
+                amountForNewComputerOrPhone, amountForSubscriptions, amountForMusic, titheAmount,
                 amountForGiving, amountForGas, amountForFood, amountForUnplanned, amountForEntertainment);
 
     }
