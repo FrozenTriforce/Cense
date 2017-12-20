@@ -1,6 +1,8 @@
 // An open-source personal finance assistance software.
 // This version uses the "Swing" library.
 
+package PersonalProjects.Cense.src;
+
 import javax.swing.*;
 import java.math.BigDecimal;
 
@@ -30,7 +32,7 @@ public class censeSwing {
     }
 
     // Creates a method that calculates and displays the user's budget
-    public static void calculateBudget(BigDecimal income1, BigDecimal income2) {
+    private static void calculateBudget(BigDecimal income1, BigDecimal income2) {
 
 
         // Calculates amount for tithe (10% of the gross income amount)

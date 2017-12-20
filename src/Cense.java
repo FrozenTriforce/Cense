@@ -1,5 +1,7 @@
-package PersonalProjects.Cense.src;// An open-source personal finance assistance software.
+// An open-source personal finance assistance software.
 // This version uses the "JavaFX" library.
+
+package PersonalProjects.Cense.src;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;

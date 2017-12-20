@@ -1,5 +1,7 @@
-package PersonalProjects.Cense.src;// An open-source personal finance assistance software.
+// An open-source personal finance assistance software.
 // This version is for debugging in a console-like interface.
+
+package PersonalProjects.Cense.src;
 
 import java.util.Scanner;
 import java.math.BigDecimal;
@@ -31,7 +33,7 @@ public class censeDebugger {
     }
 
     // Creates a method that calculates and displays the user's budget
-    public static void calculateBudget(BigDecimal income1, BigDecimal income2) {
+    private static void calculateBudget(BigDecimal income1, BigDecimal income2) {
 
 
         // Calculates amount for tithe (10% of the gross income amount)
