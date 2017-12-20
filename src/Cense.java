@@ -1,4 +1,4 @@
-// An open-source personal finance assistance software.
+package PersonalProjects.Cense.src;// An open-source personal finance assistance software.
 // This version uses the "JavaFX" library.
 
 import javafx.application.Application;
@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.math.BigDecimal;
 
-public class PaycheckCalculator extends Application {
+public class Cense extends Application {
     private TextField tfGrossIncomeAmount = new TextField();
     private TextField tfNetIncomeAmount = new TextField();
     private TextField tfTitheAmount = new TextField();

@@ -4,7 +4,7 @@
 import javax.swing.*;
 import java.math.BigDecimal;
 
-public class AlphaPaycheckCalculator {
+public class censeSwing {
 
     public static void main(String[] args) {
 

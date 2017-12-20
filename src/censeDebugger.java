@@ -1,10 +1,10 @@
-// An open-source personal finance assistance software.
+package PersonalProjects.Cense.src;// An open-source personal finance assistance software.
 // This version is for debugging in a console-like interface.
 
 import java.util.Scanner;
 import java.math.BigDecimal;
 
-public class PaycheckCalculatorDebugger {
+public class censeDebugger {
 
     public static void main(String[] args) {
 
