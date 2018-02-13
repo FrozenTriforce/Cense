@@ -1,7 +1,7 @@
 // An open-source personal finance assistance software.
 // This version uses the "JavaFX" library.
 
-package PersonalProjects.Cense.src;
+package src;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -16,24 +16,25 @@ import javafx.stage.Stage;
 import java.math.BigDecimal;
 
 public class Cense extends Application {
-    private TextField tfGrossIncomeAmount = new TextField();
-    private TextField tfNetIncomeAmount = new TextField();
-    private TextField tfTitheAmount = new TextField();
-    private TextField tfSavingsAmount = new TextField();
-    private TextField tfCheckingAmount = new TextField();
-    private TextField tfAmountForIRA = new TextField();
-    private TextField tfCarAmount = new TextField();
-    private TextField tfEmergencyAmount = new TextField();
-    private TextField tfTravelAmount = new TextField();
-    private TextField tfNewTechAmount = new TextField();
-    private TextField tfSubscriptionAmount = new TextField();
-    private TextField tfMusicAmount = new TextField();
-    private TextField tfGivingAmount = new TextField();
-    private TextField tfGasAmount = new TextField();
-    private TextField tfFoodAmount = new TextField();
-    private TextField tfUnplannedAmount = new TextField();
-    private TextField tfEntertainmentAmount = new TextField();
-    private Button btCalculate = new Button("Calculate");
+    private final TextField tfGrossIncomeAmount = new TextField();
+    private final TextField tfNetIncomeAmount = new TextField();
+    private final TextField tfTitheAmount = new TextField();
+    private final TextField tfSavingsAmount = new TextField();
+    private final TextField tfCheckingAmount = new TextField();
+    private final TextField tfIRASavings = new TextField();
+    private final TextField tfCarSavings = new TextField();
+    private final TextField tfEmergencySavings = new TextField();
+    private final TextField tfGraduateSchoolSavings = new TextField();
+    private final TextField tfTravelSavings = new TextField();
+    private final TextField tfNewTechSavings = new TextField();
+    private final TextField tfSubscriptionSavings = new TextField();
+    private final TextField tfMusicEquipmentSavings = new TextField();
+    private final TextField tfGivingAmount = new TextField();
+    private final TextField tfGasAmount = new TextField();
+    private final TextField tfFoodAmount = new TextField();
+    private final TextField tfUnplannedAmount = new TextField();
+    private final TextField tfEntertainmentAmount = new TextField();
+    private final Button btCalculate = new Button("Calculate");
 
     @Override // This overrides the start method in the JavaFX Application class
     public void start(Stage primaryStage) {
@@ -51,31 +52,33 @@ public class Cense extends Application {
         gridPane.add(tfSavingsAmount, 1, 3);
         gridPane.add(new Label("Checking Amount:"), 0, 4);
         gridPane.add(tfCheckingAmount, 1, 4);
-        gridPane.add(new Label("IRA Amount:"), 0, 5);
-        gridPane.add(tfAmountForIRA, 1, 5);
-        gridPane.add(new Label("Car Amount:"), 0, 6);
-        gridPane.add(tfCarAmount, 1, 6);
-        gridPane.add(new Label("Emergency Amount:"), 0, 7);
-        gridPane.add(tfEmergencyAmount, 1, 7);
-        gridPane.add(new Label("Travel Amount:"), 0, 8);
-        gridPane.add(tfTravelAmount, 1, 8);
-        gridPane.add(new Label("New Tech Amount:"), 0, 9);
-        gridPane.add(tfNewTechAmount, 1, 9);
-        gridPane.add(new Label("Subscription Amount:"), 0, 10);
-        gridPane.add(tfSubscriptionAmount, 1, 10);
-        gridPane.add(new Label("Music Amount:"), 0, 11);
-        gridPane.add(tfMusicAmount, 1, 11);
-        gridPane.add(new Label("Giving Amount:"), 0, 12);
-        gridPane.add(tfGivingAmount, 1, 12);
-        gridPane.add(new Label("Gas Amount:"), 0, 13);
-        gridPane.add(tfGasAmount, 1, 13);
-        gridPane.add(new Label("Food Amount:"), 0, 14);
-        gridPane.add(tfFoodAmount, 1, 14);
-        gridPane.add(new Label("Unplanned Amount:"), 0, 15);
-        gridPane.add(tfUnplannedAmount, 1, 15);
-        gridPane.add(new Label("Entertainment Amount:"), 0, 16);
-        gridPane.add(tfEntertainmentAmount, 1, 16);
-        gridPane.add(btCalculate, 0, 17);
+        gridPane.add(new Label("IRA Savings:"), 0, 5);
+        gridPane.add(tfIRASavings, 1, 5);
+        gridPane.add(new Label("Car Savings:"), 0, 6);
+        gridPane.add(tfCarSavings, 1, 6);
+        gridPane.add(new Label("Emergency Savings:"), 0, 7);
+        gridPane.add(tfEmergencySavings, 1, 7);
+        gridPane.add(new Label("Graduate School Savings:"), 0, 8);
+        gridPane.add(tfGraduateSchoolSavings, 1, 8);
+        gridPane.add(new Label("Travel Savings:"), 0, 9);
+        gridPane.add(tfTravelSavings, 1, 9);
+        gridPane.add(new Label("New Tech Savings:"), 0, 10);
+        gridPane.add(tfNewTechSavings, 1, 10);
+        gridPane.add(new Label("Subscription Savings:"), 0, 11);
+        gridPane.add(tfSubscriptionSavings, 1, 11);
+        gridPane.add(new Label("Music Equipment Savings:"), 0, 12);
+        gridPane.add(tfMusicEquipmentSavings, 1, 12);
+        gridPane.add(new Label("Giving Amount:"), 0, 13);
+        gridPane.add(tfGivingAmount, 1, 13);
+        gridPane.add(new Label("Gas Amount:"), 0, 14);
+        gridPane.add(tfGasAmount, 1, 14);
+        gridPane.add(new Label("Food Amount:"), 0, 15);
+        gridPane.add(tfFoodAmount, 1, 15);
+        gridPane.add(new Label("Unplanned Amount:"), 0, 16);
+        gridPane.add(tfUnplannedAmount, 1, 16);
+        gridPane.add(new Label("Entertainment Amount:"), 0, 17);
+        gridPane.add(tfEntertainmentAmount, 1, 17);
+        gridPane.add(btCalculate, 0, 18);
 
         // This sets the properties for the program's UI
         gridPane.setAlignment(Pos.CENTER);
@@ -84,13 +87,14 @@ public class Cense extends Application {
         tfTitheAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfSavingsAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfCheckingAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfAmountForIRA.setAlignment(Pos.BOTTOM_RIGHT);
-        tfCarAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfEmergencyAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfTravelAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfNewTechAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfSubscriptionAmount.setAlignment(Pos.BOTTOM_RIGHT);
-        tfMusicAmount.setAlignment(Pos.BOTTOM_RIGHT);
+        tfIRASavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfCarSavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfEmergencySavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfGraduateSchoolSavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfTravelSavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfNewTechSavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfSubscriptionSavings.setAlignment(Pos.BOTTOM_RIGHT);
+        tfMusicEquipmentSavings.setAlignment(Pos.BOTTOM_RIGHT);
         tfGivingAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfGasAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfFoodAmount.setAlignment(Pos.BOTTOM_RIGHT);
@@ -99,13 +103,14 @@ public class Cense extends Application {
         tfTitheAmount.setEditable(false);
         tfSavingsAmount.setEditable(false);
         tfCheckingAmount.setEditable(false);
-        tfAmountForIRA.setEditable(false);
-        tfCarAmount.setEditable(false);
-        tfEmergencyAmount.setEditable(false);
-        tfTravelAmount.setEditable(false);
-        tfNewTechAmount.setEditable(false);
-        tfSubscriptionAmount.setEditable(false);
-        tfMusicAmount.setEditable(false);
+        tfIRASavings.setEditable(false);
+        tfCarSavings.setEditable(false);
+        tfEmergencySavings.setEditable(false);
+        tfGraduateSchoolSavings.setEditable(false);
+        tfTravelSavings.setEditable(false);
+        tfNewTechSavings.setEditable(false);
+        tfSubscriptionSavings.setEditable(false);
+        tfMusicEquipmentSavings.setEditable(false);
         tfGivingAmount.setEditable(false);
         tfGasAmount.setEditable(false);
         tfFoodAmount.setEditable(false);
@@ -122,7 +127,7 @@ public class Cense extends Application {
 
         // This creates a scene and places it in the stage
         Scene scene = new Scene(gridPane, 800, 600);
-        primaryStage.setTitle("Paycheck Calculator"); // This sets the stage's title
+        primaryStage.setTitle("Cense"); // This sets the stage's title
         primaryStage.setScene(scene); // This places the scene in the stage
         primaryStage.show(); // This actually displays the stage
     }
@@ -149,25 +154,28 @@ public class Cense extends Application {
 
 
         // Calculates the amount to be allotted to the yearly Roth IRA contribution
-        BigDecimal amountForIRA = amountForSavings.multiply(BigDecimal.valueOf(0.60));
+        BigDecimal IRASavings = amountForSavings.multiply(BigDecimal.valueOf(0.60));
 
         // Calculates the amount to be allotted from savings toward a car maintenance and/or replacement
-        BigDecimal amountForCar = amountForSavings.multiply(BigDecimal.valueOf(0.07));
+        BigDecimal carSavings = amountForSavings.multiply(BigDecimal.valueOf(0.07));
 
         // Calculates the amount to be allotted from savings toward the emergency fund
-        BigDecimal amountForEmergency = amountForSavings.multiply(BigDecimal.valueOf(0.08));
+        BigDecimal emergencySavings = amountForSavings.multiply(BigDecimal.valueOf(0.08));
+
+        // Calculates the amount to be allotted from savings toward graduate school education.
+        BigDecimal graduateSchoolSavings = amountForSavings.multiply(BigDecimal.valueOf((0.03)));
 
         // Calculates the amount to be allotted from savings toward the future trips
-        BigDecimal amountForTravel = amountForSavings.multiply(BigDecimal.valueOf(0.13));
+        BigDecimal travelSavings = amountForSavings.multiply(BigDecimal.valueOf(0.13));
 
         // Calculates the amount to be allotted from savings toward a new computer or phone
-        BigDecimal amountForNewTech = amountForSavings.multiply(BigDecimal.valueOf(0.03));
+        BigDecimal newTechSavings = amountForSavings.multiply(BigDecimal.valueOf(0.02));
 
         // Calculates the amount to be allotted from savings toward yearly subscriptions
-        BigDecimal amountForSubscriptions = amountForSavings.multiply(BigDecimal.valueOf(0.03));
+        BigDecimal subscriptionSavings = amountForSavings.multiply(BigDecimal.valueOf(0.02));
 
         // Calculates the amount to be allotted from savings toward music equipment and instruments
-        BigDecimal amountForMusic = amountForSavings.multiply(BigDecimal.valueOf(0.06));
+        BigDecimal musicEquipmentSavings = amountForSavings.multiply(BigDecimal.valueOf(0.05));
 
 
         // Checking Account Percentages
@@ -199,13 +207,14 @@ public class Cense extends Application {
         tfTitheAmount.setText(String.format("$%,4.2f", amountForTithe));
         tfSavingsAmount.setText(String.format("$%,4.2f", amountForSavings));
         tfCheckingAmount.setText(String.format("$%,4.2f", amountForChecking));
-        tfAmountForIRA.setText(String.format("$%,4.2f", amountForIRA));
-        tfCarAmount.setText(String.format("$%,4.2f", amountForCar));
-        tfEmergencyAmount.setText(String.format("$%,4.2f", amountForEmergency));
-        tfTravelAmount.setText(String.format("$%,4.2f", amountForTravel));
-        tfNewTechAmount.setText(String.format("$%,4.2f", amountForNewTech));
-        tfSubscriptionAmount.setText(String.format("$%,4.2f", amountForSubscriptions));
-        tfMusicAmount.setText(String.format("$%,4.2f", amountForMusic));
+        tfIRASavings.setText(String.format("$%,4.2f", IRASavings));
+        tfCarSavings.setText(String.format("$%,4.2f", carSavings));
+        tfEmergencySavings.setText(String.format("$%,4.2f", emergencySavings));
+        tfGraduateSchoolSavings.setText(String.format("$%,4.2f", graduateSchoolSavings));
+        tfTravelSavings.setText(String.format("$%,4.2f", travelSavings));
+        tfNewTechSavings.setText(String.format("$%,4.2f", newTechSavings));
+        tfSubscriptionSavings.setText(String.format("$%,4.2f", subscriptionSavings));
+        tfMusicEquipmentSavings.setText(String.format("$%,4.2f", musicEquipmentSavings));
         tfGivingAmount.setText(String.format("$%,4.2f", amountForGiving));
         tfGasAmount.setText(String.format("$%,4.2f", amountForGas));
         tfFoodAmount.setText(String.format("$%,4.2f", amountForFood));

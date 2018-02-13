@@ -1,12 +1,12 @@
 // An open-source personal finance assistance software.
 // This version uses the "Swing" library.
 
-package PersonalProjects.Cense.src;
+package src;
 
 import javax.swing.*;
 import java.math.BigDecimal;
 
-public class censeSwing {
+class censeSwing {
 
     public static void main(String[] args) {
 
@@ -26,9 +26,6 @@ public class censeSwing {
 
         // Calls the method "calculateBudget" to display the user's desired budget
         calculateBudget(grossIncome, netIncome);
-
-        // Exits the program normally
-        System.exit(0);
     }
 
     // Creates a method that calculates and displays the user's budget
@@ -52,28 +49,28 @@ public class censeSwing {
 
 
         // Calculates the amount to be allotted to the yearly Roth IRA contribution
-        BigDecimal amountForIRA = savingsAmount.multiply(BigDecimal.valueOf(0.60));
+        BigDecimal IRASavings = savingsAmount.multiply(BigDecimal.valueOf(0.60));
 
         // Calculates the amount to be allotted from savings toward a car maintenance and/or replacement
-        BigDecimal amountForCar = savingsAmount.multiply(BigDecimal.valueOf(0.07));
+        BigDecimal carSavings = savingsAmount.multiply(BigDecimal.valueOf(0.07));
 
         // Calculates the amount to be allotted from savings toward the emergency fund
-        BigDecimal amountForEmergency = savingsAmount.multiply(BigDecimal.valueOf(0.08));
+        BigDecimal emergencySavings = savingsAmount.multiply(BigDecimal.valueOf(0.08));
+
+        // Calculates the amount to be allotted from savings toward graduate school education.
+        BigDecimal graduateSchoolSavings = savingsAmount.multiply(BigDecimal.valueOf((0.03)));
 
         // Calculates the amount to be allotted from savings toward the future trips
-        BigDecimal amountForTrips = savingsAmount.multiply(BigDecimal.valueOf(0.13));
-
-        // Calculates the amount to be allotted from savings toward college/graduate school
-        BigDecimal amountForSchool = savingsAmount.multiply(BigDecimal.valueOf(0.01));
+        BigDecimal travelSavings = savingsAmount.multiply(BigDecimal.valueOf(0.13));
 
         // Calculates the amount to be allotted from savings toward a new computer or phone
-        BigDecimal amountForNewComputerOrPhone = savingsAmount.multiply(BigDecimal.valueOf(0.02));
+        BigDecimal newTechSavings = savingsAmount.multiply(BigDecimal.valueOf(0.02));
 
         // Calculates the amount to be allotted from savings toward yearly subscriptions
-        BigDecimal amountForSubscriptions = savingsAmount.multiply(BigDecimal.valueOf(0.03));
+        BigDecimal subscriptionSavings = savingsAmount.multiply(BigDecimal.valueOf(0.02));
 
         // Calculates the amount to be allotted from savings toward music equipment and instruments
-        BigDecimal amountForMusic = savingsAmount.multiply(BigDecimal.valueOf(0.06));
+        BigDecimal musicEquipmentSavings = savingsAmount.multiply(BigDecimal.valueOf(0.05));
 
 
         // Checking Account Percentages
@@ -100,9 +97,8 @@ public class censeSwing {
 
 
         // Outputs the corresponding amounts for the user to budget
-        JOptionPane.showMessageDialog(null, String.format("Here are the following amounts for you to allocate: \n\n"
-
-                        + "                                                      - General Summary - \n"
+        JOptionPane.showMessageDialog(null, String.format(
+                "\n                                                      - General Summary - \n"
                         + "1. The amount going to your savings account is $%,4.2f. \n"
                         + "2. The amount (with tithe) going to your checking account is $%,4.2f. \n\n"
 
@@ -111,9 +107,9 @@ public class censeSwing {
                         + "1. The amount of savings going toward your yearly Roth IRA contribution is $%,4.2f. \n"
                         + "2. The amount of savings going toward car maintenance/replacement is $%,4.2f. \n"
                         + "3. The amount of savings going toward your emergency fund is $%,4.2f. \n"
-                        + "4. The amount of savings going toward future trips is $%,4.2f. \n"
-                        + "5. The amount of savings going toward college/graduate school is $%,4.2f. \n"
-                        + "6. The amount of savings going toward a new computer or phone is $%,4.2f. \n"
+                        + "4. The amount of savings going toward college/graduate school is $%,4.2f. \n"
+                        + "5. The amount of savings going toward future trips is $%,4.2f. \n"
+                        + "6. The amount of savings going toward a new technology is $%,4.2f. \n"
                         + "7. The amount of savings going toward monthly or yearly subscriptions is $%,4.2f. \n"
                         + "8. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
 
@@ -125,8 +121,8 @@ public class censeSwing {
                         + "3. The amount of spending money going toward the food fund is $%,4.2f. \n"
                         + "4. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
                         + "5. The amount of spending money going toward the entertainment/tech fund is $%,4.2f. \n",
-                savingsAmount, checkingAmount, amountForIRA, amountForCar, amountForEmergency, amountForTrips,
-                amountForSchool, amountForNewComputerOrPhone, amountForSubscriptions, amountForMusic, titheAmount,
+                savingsAmount, checkingAmount, IRASavings, carSavings, emergencySavings, graduateSchoolSavings,
+                travelSavings, newTechSavings, subscriptionSavings, musicEquipmentSavings, titheAmount,
                 amountForGiving, amountForGas, amountForFood, amountForUnplanned, amountForEntertainment));
 
     }
