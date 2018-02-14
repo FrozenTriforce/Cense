@@ -1,14 +1,15 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="Cense">
+  <artifact type="javafx" build-on-make="true" name="Cense">
     <output-path>$PROJECT_DIR$/out/artifacts/Cense</output-path>
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="src.Cense" />
-        <option name="description" value="" />
+        <option name="description" value="A Java-based application designed to help facilitate good personal finance practices." />
         <option name="height" value="600" />
         <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
         <option name="title" value="Cense" />
-        <option name="vendor" value="" />
+        <option name="vendor" value="amorehead (GitHub)" />
         <option name="version" value="" />
         <option name="width" value="800" />
       </options>

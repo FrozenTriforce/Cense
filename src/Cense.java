@@ -36,6 +36,11 @@ public class Cense extends Application {
     private final TextField tfEntertainmentAmount = new TextField();
     private final Button btCalculate = new Button("Calculate");
 
+    // This guarantees the application will launch upon execution in a GUI.
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override // This overrides the start method in the JavaFX Application class
     public void start(Stage primaryStage) {
         // This creates the UI
