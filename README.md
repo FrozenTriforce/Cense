@@ -1,2 +1,2 @@
 # cense
-A Java-based application designed to help facilitate good personal finance practices.
+A Java-based application designed to help facilitate sensical personal finance practices.

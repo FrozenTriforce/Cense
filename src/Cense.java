@@ -27,7 +27,6 @@ public class Cense extends Application {
     private final TextField tfGraduateSchoolSavings = new TextField();
     private final TextField tfTravelSavings = new TextField();
     private final TextField tfNewTechSavings = new TextField();
-    private final TextField tfSubscriptionSavings = new TextField();
     private final TextField tfMusicEquipmentSavings = new TextField();
     private final TextField tfGivingAmount = new TextField();
     private final TextField tfGasAmount = new TextField();
@@ -41,9 +40,9 @@ public class Cense extends Application {
         launch(args);
     }
 
-    @Override // This overrides the start method in the JavaFX Application class
+    @Override // This overrides the start method in the JavaFX Application class.
     public void start(Stage primaryStage) {
-        // This creates the UI
+        // This creates the UI.
         GridPane gridPane = new GridPane();
         gridPane.setHgap(5);
         gridPane.setVgap(5);
@@ -69,23 +68,21 @@ public class Cense extends Application {
         gridPane.add(tfTravelSavings, 1, 9);
         gridPane.add(new Label("New Tech Savings:"), 0, 10);
         gridPane.add(tfNewTechSavings, 1, 10);
-        gridPane.add(new Label("Subscription Savings:"), 0, 11);
-        gridPane.add(tfSubscriptionSavings, 1, 11);
-        gridPane.add(new Label("Music Equipment Savings:"), 0, 12);
-        gridPane.add(tfMusicEquipmentSavings, 1, 12);
-        gridPane.add(new Label("Giving Amount:"), 0, 13);
-        gridPane.add(tfGivingAmount, 1, 13);
-        gridPane.add(new Label("Gas Amount:"), 0, 14);
-        gridPane.add(tfGasAmount, 1, 14);
-        gridPane.add(new Label("Food Amount:"), 0, 15);
-        gridPane.add(tfFoodAmount, 1, 15);
-        gridPane.add(new Label("Unplanned Amount:"), 0, 16);
-        gridPane.add(tfUnplannedAmount, 1, 16);
-        gridPane.add(new Label("Entertainment Amount:"), 0, 17);
-        gridPane.add(tfEntertainmentAmount, 1, 17);
-        gridPane.add(btCalculate, 0, 18);
+        gridPane.add(new Label("Music Equipment Savings:"), 0, 11);
+        gridPane.add(tfMusicEquipmentSavings, 1, 11);
+        gridPane.add(new Label("Giving Amount:"), 0, 12);
+        gridPane.add(tfGivingAmount, 1, 12);
+        gridPane.add(new Label("Gas Amount:"), 0, 13);
+        gridPane.add(tfGasAmount, 1, 13);
+        gridPane.add(new Label("Food Amount:"), 0, 14);
+        gridPane.add(tfFoodAmount, 1, 14);
+        gridPane.add(new Label("Unplanned Amount:"), 0, 15);
+        gridPane.add(tfUnplannedAmount, 1, 15);
+        gridPane.add(new Label("Entertainment Amount:"), 0, 16);
+        gridPane.add(tfEntertainmentAmount, 1, 16);
+        gridPane.add(btCalculate, 0, 17);
 
-        // This sets the properties for the program's UI
+        // This sets the properties for the program's UI.
         gridPane.setAlignment(Pos.CENTER);
         tfGrossIncomeAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfNetIncomeAmount.setAlignment(Pos.BOTTOM_RIGHT);
@@ -98,7 +95,6 @@ public class Cense extends Application {
         tfGraduateSchoolSavings.setAlignment(Pos.BOTTOM_RIGHT);
         tfTravelSavings.setAlignment(Pos.BOTTOM_RIGHT);
         tfNewTechSavings.setAlignment(Pos.BOTTOM_RIGHT);
-        tfSubscriptionSavings.setAlignment(Pos.BOTTOM_RIGHT);
         tfMusicEquipmentSavings.setAlignment(Pos.BOTTOM_RIGHT);
         tfGivingAmount.setAlignment(Pos.BOTTOM_RIGHT);
         tfGasAmount.setAlignment(Pos.BOTTOM_RIGHT);
@@ -114,7 +110,6 @@ public class Cense extends Application {
         tfGraduateSchoolSavings.setEditable(false);
         tfTravelSavings.setEditable(false);
         tfNewTechSavings.setEditable(false);
-        tfSubscriptionSavings.setEditable(false);
         tfMusicEquipmentSavings.setEditable(false);
         tfGivingAmount.setEditable(false);
         tfGasAmount.setEditable(false);
@@ -123,86 +118,88 @@ public class Cense extends Application {
         tfEntertainmentAmount.setEditable(false);
         GridPane.setHalignment(btCalculate, HPos.RIGHT);
 
-        // Sets dummy values for the gross and net income fields
+        // This sets dummy values for the gross and net income fields.
         tfGrossIncomeAmount.setText("$0.00");
         tfNetIncomeAmount.setText("$0.00");
 
-        // This processes the programs events
+        // This processes the programs events.
         btCalculate.setOnAction(e -> calculatePaycheckAmounts());
 
-        // This creates a scene and places it in the stage
+        // This creates a scene and places it in the stage.
         Scene scene = new Scene(gridPane, 800, 600);
-        primaryStage.setTitle("Cense"); // This sets the stage's title
-        primaryStage.setScene(scene); // This places the scene in the stage
-        primaryStage.show(); // This actually displays the stage
+        primaryStage.setTitle("Cense: A Calculator for Sensical Personal Finance"); // This sets the stage's title.
+        primaryStage.setScene(scene); // This places the scene in the stage.
+        primaryStage.show(); // This actually displays the stage.
     }
 
     private void calculatePaycheckAmounts() {
-        // This gets the gross and net income values from the text fields
+
+        // This gets the gross and net income values from the text fields.
         BigDecimal GrossIncomeAmount = new BigDecimal(tfGrossIncomeAmount.getText().replace("$", ""));
         BigDecimal NetIncomeAmount = new BigDecimal(tfNetIncomeAmount.getText().replace("$", ""));
 
-        // Calculates amount for tithe (10% of the gross income amount)
+
+        // Calculation Setup Stage //
+
+
+        // This calculates amount for tithe (10% of the gross income amount).
         BigDecimal amountForTithe = GrossIncomeAmount.multiply(BigDecimal.valueOf(0.10));
 
-        // Sets aside the tithe amount from the current netIncome
+        // This sets aside the tithe amount from the current netIncome.
         BigDecimal adjustmentAmount = NetIncomeAmount.subtract(amountForTithe);
 
-        // Calculates the amount to be allotted to a savings account
+        // This calculates the amount to be allotted to a savings account.
         BigDecimal amountForSavings = adjustmentAmount.multiply(BigDecimal.valueOf(0.80));
 
-        // Calculates the amount to be allotted to a checking account
+        // This calculates the amount to be allotted to a checking account.
         BigDecimal amountForChecking = adjustmentAmount.multiply(BigDecimal.valueOf(0.20));
 
 
-        // Savings Account Percentages
+        // Savings Account Percentages //
 
 
-        // Calculates the amount to be allotted to the yearly Roth IRA contribution
+        // This calculates the amount to be allotted to the yearly Roth IRA contribution.
         BigDecimal IRASavings = amountForSavings.multiply(BigDecimal.valueOf(0.60));
 
-        // Calculates the amount to be allotted from savings toward a car maintenance and/or replacement
-        BigDecimal carSavings = amountForSavings.multiply(BigDecimal.valueOf(0.07));
+        // This calculates the amount to be allotted from savings toward a car maintenance and/or replacement.
+        BigDecimal carSavings = amountForSavings.multiply(BigDecimal.valueOf(0.08));
 
-        // Calculates the amount to be allotted from savings toward the emergency fund
+        // This calculates the amount to be allotted from savings toward the emergency fund.
         BigDecimal emergencySavings = amountForSavings.multiply(BigDecimal.valueOf(0.08));
 
-        // Calculates the amount to be allotted from savings toward graduate school education.
-        BigDecimal graduateSchoolSavings = amountForSavings.multiply(BigDecimal.valueOf((0.03)));
+        // This calculates the amount to be allotted from savings toward graduate school education.
+        BigDecimal graduateSchoolSavings = amountForSavings.multiply(BigDecimal.valueOf((0.04)));
 
-        // Calculates the amount to be allotted from savings toward the future trips
-        BigDecimal travelSavings = amountForSavings.multiply(BigDecimal.valueOf(0.13));
+        // This calculates the amount to be allotted from savings toward the future trips.
+        BigDecimal travelSavings = amountForSavings.multiply(BigDecimal.valueOf(0.14));
 
-        // Calculates the amount to be allotted from savings toward a new computer or phone
+        // This calculates the amount to be allotted from savings toward a new computer or phone.
         BigDecimal newTechSavings = amountForSavings.multiply(BigDecimal.valueOf(0.02));
 
-        // Calculates the amount to be allotted from savings toward yearly subscriptions
-        BigDecimal subscriptionSavings = amountForSavings.multiply(BigDecimal.valueOf(0.02));
-
-        // Calculates the amount to be allotted from savings toward music equipment and instruments
-        BigDecimal musicEquipmentSavings = amountForSavings.multiply(BigDecimal.valueOf(0.05));
+        // This calculates the amount to be allotted from savings toward music equipment and instruments.
+        BigDecimal musicEquipmentSavings = amountForSavings.multiply(BigDecimal.valueOf(0.04));
 
 
-        // Checking Account Percentages
+        // Checking Account Percentages //
 
 
-        // Calculates the amount to be allotted from checking toward the giving fund
+        // This calculates the amount to be allotted from checking toward the giving fund.
         BigDecimal amountForGiving = amountForChecking.multiply(BigDecimal.valueOf(0.27));
 
-        // Calculates the amount to be allotted from checking toward the gas fund
+        // This calculates the amount to be allotted from checking toward the gas fund.
         BigDecimal amountForGas = amountForChecking.multiply(BigDecimal.valueOf(0.28));
 
-        // Calculates the amount to be allotted from checking toward the food fund
+        // This calculates the amount to be allotted from checking toward the food fund.
         BigDecimal amountForFood = amountForChecking.multiply(BigDecimal.valueOf(0.19));
 
-        // Calculates the amount to be allotted from checking toward the unplanned expenses fund
+        // This calculates the amount to be allotted from checking toward the unplanned expenses fund.
         BigDecimal amountForUnplanned = amountForChecking.multiply(BigDecimal.valueOf(0.06));
 
-        // Calculates the amount to be allotted from checking toward the entertainment fund
+        // This calculates the amount to be allotted from checking toward the entertainment fund.
         BigDecimal amountForEntertainment = amountForChecking.multiply(BigDecimal.valueOf(0.20));
 
 
-        // Adds back the tithe to the checking account
+        // This adds back the tithe to the checking account.
         amountForChecking = amountForChecking.add(amountForTithe);
 
 
@@ -218,7 +215,6 @@ public class Cense extends Application {
         tfGraduateSchoolSavings.setText(String.format("$%,4.2f", graduateSchoolSavings));
         tfTravelSavings.setText(String.format("$%,4.2f", travelSavings));
         tfNewTechSavings.setText(String.format("$%,4.2f", newTechSavings));
-        tfSubscriptionSavings.setText(String.format("$%,4.2f", subscriptionSavings));
         tfMusicEquipmentSavings.setText(String.format("$%,4.2f", musicEquipmentSavings));
         tfGivingAmount.setText(String.format("$%,4.2f", amountForGiving));
         tfGasAmount.setText(String.format("$%,4.2f", amountForGas));

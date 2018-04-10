@@ -10,93 +10,93 @@ class censeSwing {
 
     public static void main(String[] args) {
 
-        // Prompts the user to enter a gross income amount
+        // This prompts the user to enter a gross income amount.
         String inputString = JOptionPane.showInputDialog(null,
                 "Please enter your paycheck's gross income (the amount before taxes and deductions): ");
 
-        // Stores the user's gross income amount in "grossIncome"
+        // This stores the user's gross income amount in "grossIncome".
         BigDecimal grossIncome = new BigDecimal(inputString);
 
-        // Prompts the user to enter a net income amount
+        // This prompts the user to enter a net income amount
         inputString = JOptionPane.showInputDialog(null,
                 "Please enter your paycheck's net income (the amount after taxes and deductions): ");
 
-        // Stores the user's net income amount in "netIncome"
+        // This stores the user's net income amount in "netIncome".
         BigDecimal netIncome = new BigDecimal(inputString);
 
-        // Calls the method "calculateBudget" to display the user's desired budget
+        // This calls the method "calculateBudget" to display the user's desired budget.
         calculateBudget(grossIncome, netIncome);
     }
 
-    // Creates a method that calculates and displays the user's budget
+    // This creates a method that calculates and displays the user's budget.
     private static void calculateBudget(BigDecimal income1, BigDecimal income2) {
 
 
-        // Calculates amount for tithe (10% of the gross income amount)
+        // Pre-Calculation Stage //
+
+
+        // This calculates amount for tithe (10% of the gross income amount).
         BigDecimal titheAmount = income1.multiply(BigDecimal.valueOf(0.10));
 
-        // Sets aside the tithe amount from the current netIncome
+        // This sets aside the tithe amount from the current netIncome.
         BigDecimal adjustmentAmount = income2.subtract(titheAmount);
 
-        // Calculates the amount to be allotted to a savings account
+        // This calculates the amount to be allotted to a savings account.
         BigDecimal savingsAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.80));
 
-        // Calculates the amount to be allotted to a checking account
+        // This calculates the amount to be allotted to a checking account.
         BigDecimal checkingAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.20));
 
 
         // Savings Account Percentages
 
 
-        // Calculates the amount to be allotted to the yearly Roth IRA contribution
+        // This calculates the amount to be allotted to the yearly Roth IRA contribution.
         BigDecimal IRASavings = savingsAmount.multiply(BigDecimal.valueOf(0.60));
 
-        // Calculates the amount to be allotted from savings toward a car maintenance and/or replacement
-        BigDecimal carSavings = savingsAmount.multiply(BigDecimal.valueOf(0.07));
+        // This calculates the amount to be allotted from savings toward a car maintenance and/or replacement.
+        BigDecimal carSavings = savingsAmount.multiply(BigDecimal.valueOf(0.08));
 
-        // Calculates the amount to be allotted from savings toward the emergency fund
+        // This calculates the amount to be allotted from savings toward the emergency fund.
         BigDecimal emergencySavings = savingsAmount.multiply(BigDecimal.valueOf(0.08));
 
-        // Calculates the amount to be allotted from savings toward graduate school education.
-        BigDecimal graduateSchoolSavings = savingsAmount.multiply(BigDecimal.valueOf((0.03)));
+        // This calculates the amount to be allotted from savings toward graduate school education.
+        BigDecimal graduateSchoolSavings = savingsAmount.multiply(BigDecimal.valueOf((0.04)));
 
-        // Calculates the amount to be allotted from savings toward the future trips
-        BigDecimal travelSavings = savingsAmount.multiply(BigDecimal.valueOf(0.13));
+        // This calculates the amount to be allotted from savings toward the future trips.
+        BigDecimal travelSavings = savingsAmount.multiply(BigDecimal.valueOf(0.14));
 
-        // Calculates the amount to be allotted from savings toward a new computer or phone
+        // This calculates the amount to be allotted from savings toward a new computer or phone.
         BigDecimal newTechSavings = savingsAmount.multiply(BigDecimal.valueOf(0.02));
 
-        // Calculates the amount to be allotted from savings toward yearly subscriptions
-        BigDecimal subscriptionSavings = savingsAmount.multiply(BigDecimal.valueOf(0.02));
-
-        // Calculates the amount to be allotted from savings toward music equipment and instruments
-        BigDecimal musicEquipmentSavings = savingsAmount.multiply(BigDecimal.valueOf(0.05));
+        // This calculates the amount to be allotted from savings toward music equipment and instruments.
+        BigDecimal musicEquipmentSavings = savingsAmount.multiply(BigDecimal.valueOf(0.04));
 
 
-        // Checking Account Percentages
+        // Checking Account Percentages //
 
 
-        // Calculates the amount to be allotted from checking toward the giving fund
+        // This calculates the amount to be allotted from checking toward the giving fund.
         BigDecimal amountForGiving = checkingAmount.multiply(BigDecimal.valueOf(0.27));
 
-        // Calculates the amount to be allotted from checking toward the gas fund
+        // This calculates the amount to be allotted from checking toward the gas fund.
         BigDecimal amountForGas = checkingAmount.multiply(BigDecimal.valueOf(0.30));
 
-        // Calculates the amount to be allotted from checking toward the food fund
+        // This calculates the amount to be allotted from checking toward the food fund.
         BigDecimal amountForFood = checkingAmount.multiply(BigDecimal.valueOf(0.17));
 
-        // Calculates the amount to be allotted from checking toward the unplanned expenses fund
+        // This calculates the amount to be allotted from checking toward the unplanned expenses fund.
         BigDecimal amountForUnplanned = checkingAmount.multiply(BigDecimal.valueOf(0.06));
 
-        // Calculates the amount to be allotted from checking toward the entertainment fund
+        // This calculates the amount to be allotted from checking toward the entertainment fund.
         BigDecimal amountForEntertainment = checkingAmount.multiply(BigDecimal.valueOf(0.20));
 
 
-        // Adds back the tithe to the checking account
+        // This adds back the tithe to the checking account.
         checkingAmount = checkingAmount.add(titheAmount);
 
 
-        // Outputs the corresponding amounts for the user to budget
+        // This displays the corresponding amounts for the user to budget.
         JOptionPane.showMessageDialog(null, String.format(
                 "\n                                                      - General Summary - \n"
                         + "1. The amount going to your savings account is $%,4.2f. \n"
@@ -110,8 +110,7 @@ class censeSwing {
                         + "4. The amount of savings going toward college/graduate school is $%,4.2f. \n"
                         + "5. The amount of savings going toward future trips is $%,4.2f. \n"
                         + "6. The amount of savings going toward a new technology is $%,4.2f. \n"
-                        + "7. The amount of savings going toward monthly or yearly subscriptions is $%,4.2f. \n"
-                        + "8. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
+                        + "7. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
 
                         + "Please enter the following amounts in the designated spreadsheet (Checking Account): \n"
 
@@ -122,8 +121,8 @@ class censeSwing {
                         + "4. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
                         + "5. The amount of spending money going toward the entertainment/tech fund is $%,4.2f. \n",
                 savingsAmount, checkingAmount, IRASavings, carSavings, emergencySavings, graduateSchoolSavings,
-                travelSavings, newTechSavings, subscriptionSavings, musicEquipmentSavings, titheAmount,
-                amountForGiving, amountForGas, amountForFood, amountForUnplanned, amountForEntertainment));
+                travelSavings, newTechSavings, musicEquipmentSavings, titheAmount, amountForGiving, amountForGas,
+                amountForFood, amountForUnplanned, amountForEntertainment));
 
     }
 }
