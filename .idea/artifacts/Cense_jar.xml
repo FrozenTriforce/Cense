@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Cense:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cense_jar</output-path>
+    <root id="archive" name="Cense_jar.jar">
+      <element id="module-output" name="Cense" />
+    </root>
+  </artifact>
+</component>
