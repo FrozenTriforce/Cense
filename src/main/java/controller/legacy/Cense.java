@@ -1,7 +1,7 @@
 // An open-source personal finance assistance software.
 // This version uses the "JavaFX" library.
 
-package main.java.controller;
+package controller.legacy;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
