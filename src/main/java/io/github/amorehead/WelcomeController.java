@@ -177,35 +177,35 @@ public class WelcomeController implements Initializable {
 
 
         // This defines the ratio for this particular field.
-        double charityFundsRatio = Double.parseDouble(sheet1.getRow(7).getCell(2)
+        double charityFundsRatio = Double.parseDouble(sheet1.getRow(5).getCell(2)
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from checking toward a charitable giving fund.
         BigDecimal charityFunds = checkingTotal.multiply(BigDecimal.valueOf(charityFundsRatio));
 
         // This defines the ratio for this particular field.
-        double transportationFundsRatio = Double.parseDouble(sheet1.getRow(9).getCell(2)
+        double transportationFundsRatio = Double.parseDouble(sheet1.getRow(7).getCell(2)
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from checking toward a transportation fund.
         BigDecimal transportationFunds = checkingTotal.multiply(BigDecimal.valueOf(transportationFundsRatio));
 
         // This defines the ratio for this particular field.
-        double foodFundsRatio = Double.parseDouble(sheet1.getRow(11).getCell(2)
+        double foodFundsRatio = Double.parseDouble(sheet1.getRow(9).getCell(2)
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from checking toward a food and grocery fund.
         BigDecimal foodFunds = checkingTotal.multiply(BigDecimal.valueOf(foodFundsRatio));
 
         // This defines the ratio for this particular field.
-        double entertainmentFundsRatio = Double.parseDouble(sheet1.getRow(13).getCell(2)
+        double entertainmentFundsRatio = Double.parseDouble(sheet1.getRow(11).getCell(2)
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from checking toward an entertainment fund.
         BigDecimal entertainmentFunds = checkingTotal.multiply(BigDecimal.valueOf(entertainmentFundsRatio));
 
         // This defines the ratio for this particular field.
-        double unplannedExpenseFundsRatio = Double.parseDouble(sheet1.getRow(15).getCell(2)
+        double unplannedExpenseFundsRatio = Double.parseDouble(sheet1.getRow(13).getCell(2)
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from checking toward unplanned expense funds.
@@ -237,11 +237,11 @@ public class WelcomeController implements Initializable {
             newTechnologySavings = newTechnologySavings.add(BigDecimal.valueOf(sheet1.getRow(16).getCell(0).getNumericCellValue()));
             newClothingSavings = newClothingSavings.add(BigDecimal.valueOf(sheet1.getRow(18).getCell(0).getNumericCellValue()));
 
-            charityFunds = charityFunds.add(BigDecimal.valueOf(sheet1.getRow(8).getCell(2).getNumericCellValue()));
-            transportationFunds = transportationFunds.add(BigDecimal.valueOf(sheet1.getRow(10).getCell(2).getNumericCellValue()));
-            foodFunds = foodFunds.add(BigDecimal.valueOf(sheet1.getRow(12).getCell(2).getNumericCellValue()));
-            entertainmentFunds = entertainmentFunds.add(BigDecimal.valueOf(sheet1.getRow(14).getCell(2).getNumericCellValue()));
-            unplannedExpenseFunds = unplannedExpenseFunds.add(BigDecimal.valueOf(sheet1.getRow(16).getCell(2).getNumericCellValue()));
+            charityFunds = charityFunds.add(BigDecimal.valueOf(sheet1.getRow(6).getCell(2).getNumericCellValue()));
+            transportationFunds = transportationFunds.add(BigDecimal.valueOf(sheet1.getRow(8).getCell(2).getNumericCellValue()));
+            foodFunds = foodFunds.add(BigDecimal.valueOf(sheet1.getRow(10).getCell(2).getNumericCellValue()));
+            entertainmentFunds = entertainmentFunds.add(BigDecimal.valueOf(sheet1.getRow(12).getCell(2).getNumericCellValue()));
+            unplannedExpenseFunds = unplannedExpenseFunds.add(BigDecimal.valueOf(sheet1.getRow(14).getCell(2).getNumericCellValue()));
 
 
             // The following updates the appropriate cells in the user's provided spreadsheet.
@@ -254,11 +254,11 @@ public class WelcomeController implements Initializable {
             sheet1.getRow(16).getCell(0).setCellValue(newTechnologySavings.doubleValue());
             sheet1.getRow(18).getCell(0).setCellValue(newClothingSavings.doubleValue());
 
-            sheet1.getRow(8).getCell(2).setCellValue(charityFunds.doubleValue());
-            sheet1.getRow(10).getCell(2).setCellValue(transportationFunds.doubleValue());
-            sheet1.getRow(12).getCell(2).setCellValue(foodFunds.doubleValue());
-            sheet1.getRow(14).getCell(2).setCellValue(entertainmentFunds.doubleValue());
-            sheet1.getRow(16).getCell(2).setCellValue(unplannedExpenseFunds.doubleValue());
+            sheet1.getRow(6).getCell(2).setCellValue(charityFunds.doubleValue());
+            sheet1.getRow(8).getCell(2).setCellValue(transportationFunds.doubleValue());
+            sheet1.getRow(10).getCell(2).setCellValue(foodFunds.doubleValue());
+            sheet1.getRow(12).getCell(2).setCellValue(entertainmentFunds.doubleValue());
+            sheet1.getRow(14).getCell(2).setCellValue(unplannedExpenseFunds.doubleValue());
 
             try {
                 fileOutputStream = new FileOutputStream(spreadsheet);

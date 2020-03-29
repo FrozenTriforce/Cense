@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Cense:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3ffe19c3-4d47-4a8b-916e-dc8a2779f713" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Cense_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/amorehead/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/amorehead/WelcomeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +40,30 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/io/github/amorehead" />
       <recent name="$PROJECT_DIR$/src/main/java/io/github/amorehead" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.amorehead.App" />
       <module name="Cense" />
@@ -62,9 +77,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Build Cense.jar" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="io.github.amorehead.App" />
+      <module name="Cense" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="assembly:single" />
+      </method>
+    </configuration>
+    <configuration name="Cense.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Cense_jar/Cense.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="Cense" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build Cense.jar" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="JAR Application.Cense.jar" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.Cense.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -78,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585515782539</updated>
-      <workItem from="1585515783785" duration="1076000" />
+      <workItem from="1585515783785" duration="5739000" />
     </task>
     <servers />
   </component>
@@ -89,29 +124,61 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl" timestamp="1585516363508">
+    <state x="415" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585522137762">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585516363508" />
-    <state width="1350" height="240" key="GridCell.Tab.0.bottom" timestamp="1585517001093">
+    <state x="415" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585522137762" />
+    <state x="680" y="317" width="525" height="429" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585522121629">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001093" />
-    <state width="1350" height="240" key="GridCell.Tab.0.center" timestamp="1585517001092">
+    <state x="680" y="317" width="525" height="429" key="#com.intellij.ide.util.TreeClassChooserDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585522121629" />
+    <state x="685" y="291" width="524" height="482" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1585521137335">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001092" />
-    <state width="1350" height="240" key="GridCell.Tab.0.left" timestamp="1585517001092">
+    <state x="685" y="291" width="524" height="482" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585521137335" />
+    <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl" timestamp="1585520853604">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001092" />
-    <state width="1350" height="240" key="GridCell.Tab.0.right" timestamp="1585517001093">
+    <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585520853604" />
+    <state width="1350" height="240" key="GridCell.Tab.0.bottom" timestamp="1585522630004">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001093" />
-    <state x="440" y="112" width="1024" height="843" key="SettingsEditor" timestamp="1585516597696">
+    <state width="1350" height="240" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585522630004" />
+    <state width="1350" height="240" key="GridCell.Tab.0.center" timestamp="1585522630003">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="440" y="112" width="1024" height="843" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585516597696" />
+    <state width="1350" height="240" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585522630003" />
+    <state width="1350" height="240" key="GridCell.Tab.0.left" timestamp="1585522630003">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="240" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585522630003" />
+    <state width="1350" height="240" key="GridCell.Tab.0.right" timestamp="1585522630003">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="240" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585522630003" />
+    <state width="1350" height="298" key="GridCell.Tab.1.bottom" timestamp="1585517390087">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="298" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585517390087" />
+    <state width="1350" height="298" key="GridCell.Tab.1.center" timestamp="1585517390085">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="298" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585517390085" />
+    <state width="1350" height="298" key="GridCell.Tab.1.left" timestamp="1585517390083">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="298" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585517390083" />
+    <state width="1350" height="298" key="GridCell.Tab.1.right" timestamp="1585517390086">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1350" height="298" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585517390086" />
+    <state x="440" y="112" width="1024" height="843" key="SettingsEditor" timestamp="1585522351949">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="440" y="112" width="1024" height="843" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585522351949" />
+    <state x="709" y="400" width="476" height="264" key="classpath-attribute-editor" timestamp="1585520952391">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="709" y="400" width="476" height="264" key="classpath-attribute-editor/0.28.1920.1052@0.28.1920.1052" timestamp="1585520952391" />
   </component>
 </project>
