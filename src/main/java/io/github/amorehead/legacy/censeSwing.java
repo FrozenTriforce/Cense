@@ -1,30 +1,29 @@
 // An open-source personal finance assistance software.
-// This version is for debugging in a console-like interface.
+// This version uses the "Swing" library.
 // Warning: deprecated.
 
-package main.java.legacy;
+package io.github.amorehead.legacy;
 
-import java.util.Scanner;
+import javax.swing.*;
 import java.math.BigDecimal;
 
-class censeDebugger {
+class censeSwing {
 
     public static void main(String[] args) {
 
-        // This creates a Scanner object.
-        Scanner input = new Scanner(System.in);
-
         // This prompts the user to enter a gross income amount.
-        System.out.print("Please enter your paycheck's gross income (the amount before taxes and deductions): ");
+        String inputString = JOptionPane.showInputDialog(null,
+                "Please enter your paycheck's gross income (the amount before taxes and deductions): ");
 
         // This stores the user's gross income amount in "grossIncome".
-        BigDecimal grossIncome = new BigDecimal(input.next());
+        BigDecimal grossIncome = new BigDecimal(inputString);
 
-        // This prompts the user to enter a net income amount.
-        System.out.print("Please enter your paycheck's net income (the amount after taxes and deductions): ");
+        // This prompts the user to enter a net income amount
+        inputString = JOptionPane.showInputDialog(null,
+                "Please enter your paycheck's net income (the amount after taxes and deductions): ");
 
         // This stores the user's net income amount in "netIncome".
-        BigDecimal netIncome = new BigDecimal(input.next());
+        BigDecimal netIncome = new BigDecimal(inputString);
 
         // This calls the method "calculateBudget" to display the user's desired budget.
         calculateBudget(grossIncome, netIncome);
@@ -38,19 +37,19 @@ class censeDebugger {
 
 
         // This calculates amount for tithe (10% of the gross income amount).
-        BigDecimal titheAmount = income1.multiply(BigDecimal.valueOf(0.1));
+        BigDecimal titheAmount = income1.multiply(BigDecimal.valueOf(0.10));
 
         // This sets aside the tithe amount from the current netIncome.
         BigDecimal adjustmentAmount = income2.subtract(titheAmount);
 
         // This calculates the amount to be allotted to a savings account.
-        BigDecimal savingsAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.8));
+        BigDecimal savingsAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.80));
 
         // This calculates the amount to be allotted to a checking account.
-        BigDecimal checkingAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.2));
+        BigDecimal checkingAmount = adjustmentAmount.multiply(BigDecimal.valueOf(0.20));
 
 
-        // Savings Account Percentages //
+        // Savings Account Percentages
 
 
         // This calculates the amount to be allotted to the yearly Roth IRA contribution.
@@ -99,7 +98,8 @@ class censeDebugger {
 
 
         // This displays the corresponding amounts for the user to budget.
-        System.out.printf("\n                   - General Summary - \n"
+        JOptionPane.showMessageDialog(null, String.format(
+                "\n                                                      - General Summary - \n"
                         + "1. The amount going to your savings account is $%,4.2f. \n"
                         + "2. The amount (with tithe) going to your checking account is $%,4.2f. \n\n"
 
@@ -108,7 +108,7 @@ class censeDebugger {
                         + "1. The amount of savings going toward your yearly Roth IRA contribution is $%,4.2f. \n"
                         + "2. The amount of savings going toward car maintenance/replacement is $%,4.2f. \n"
                         + "3. The amount of savings going toward your emergency fund is $%,4.2f. \n"
-                        + "4. The amount of savings going toward your graduate school education is $%,4.2f. \n"
+                        + "4. The amount of savings going toward college/graduate school is $%,4.2f. \n"
                         + "5. The amount of savings going toward future trips is $%,4.2f. \n"
                         + "6. The amount of savings going toward a new technology is $%,4.2f. \n"
                         + "7. The amount of savings going toward music equipment and/or instruments is $%,4.2f. \n\n"
@@ -116,14 +116,14 @@ class censeDebugger {
                         + "Please enter the following amounts in the designated spreadsheet (Checking Account): \n"
 
                         + "1. The amount of tithe for this paycheck (10%% of your gross income) is $%,4.2f. \n"
-                        + "2. The amount of spending money going toward the giving fund is $%,4.2f. \n"
-                        + "3. The amount of spending money going toward the gas fund is $%,4.2f. \n"
-                        + "4. The amount of spending money going toward the food fund is $%,4.2f. \n"
-                        + "5. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
-                        + "6. The amount of spending money going toward the entertainment fund is $%,4.2f. \n",
+                        + "1. The amount of spending money going toward the giving fund is $%,4.2f. \n"
+                        + "2. The amount of spending money going toward the gas fund is $%,4.2f. \n"
+                        + "3. The amount of spending money going toward the food fund is $%,4.2f. \n"
+                        + "4. The amount of spending money going toward the fund for unplanned expenses is $%,4.2f. \n"
+                        + "5. The amount of spending money going toward the entertainment/tech fund is $%,4.2f. \n",
                 savingsAmount, checkingAmount, IRASavings, carSavings, emergencySavings, graduateSchoolSavings,
                 travelSavings, newTechSavings, musicEquipmentSavings, titheAmount, amountForGiving, amountForGas,
-                amountForFood, amountForUnplanned, amountForEntertainment);
+                amountForFood, amountForUnplanned, amountForEntertainment));
 
     }
 }

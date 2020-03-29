@@ -1,4 +1,4 @@
-package controller;
+package io.github.amorehead;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -41,6 +41,9 @@ public class WelcomeController implements Initializable {
     @FXML
     private TextField tfNewTechnologySavings;
     @FXML
+    private TextField tfNewClothingSavings;
+
+    @FXML
     private TextField tfCharityFunds;
     @FXML
     private TextField tfTransportationFunds;
@@ -50,6 +53,7 @@ public class WelcomeController implements Initializable {
     private TextField tfEntertainmentFunds;
     @FXML
     private TextField tfUnplannedExpenseFunds;
+
     @FXML
     private Label errorLabel;
 
@@ -161,6 +165,13 @@ public class WelcomeController implements Initializable {
         // This calculates the amount to be allotted from savings toward new devices.
         BigDecimal newTechnologySavings = savingsTotal.multiply(BigDecimal.valueOf(newTechnologySavingsRatio));
 
+        // This defines the ratio for this particular field.
+        double newClothingSavingsRatio = Double.parseDouble(sheet1.getRow(17).getCell(0)
+                .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
+
+        // This calculates the amount to be allotted from savings toward new clothing.
+        BigDecimal newClothingSavings = savingsTotal.multiply(BigDecimal.valueOf(newTechnologySavingsRatio));
+
 
         // Checking Account Percentages //
 
@@ -206,8 +217,8 @@ public class WelcomeController implements Initializable {
 
 
         // The following checks to ensure that the user's spreadsheet ratios add up to 100%.
-        if ((retirementSavingsRatio + carReplacementSavingsRatio + carMaintenanceAndRepairSavingsRatio
-                + emergencySavingsRatio + realEstateSavingsRatio + futureTravelSavingsRatio + newTechnologySavingsRatio != 1.0)
+        if ((retirementSavingsRatio + carReplacementSavingsRatio + carMaintenanceAndRepairSavingsRatio + emergencySavingsRatio +
+                realEstateSavingsRatio + futureTravelSavingsRatio + newTechnologySavingsRatio + newClothingSavingsRatio != 1.0)
                 || (charityFundsRatio + transportationFundsRatio + foodFundsRatio + entertainmentFundsRatio + unplannedExpenseFundsRatio != 1.0)) {
             errorLabel.setText("Error: Account ratios do not balance to 100%.");
             errorLabel.setTextFill(Color.ORANGERED);
@@ -224,6 +235,7 @@ public class WelcomeController implements Initializable {
             realEstateSavings = realEstateSavings.add(BigDecimal.valueOf(sheet1.getRow(12).getCell(0).getNumericCellValue()));
             futureTravelSavings = futureTravelSavings.add(BigDecimal.valueOf(sheet1.getRow(14).getCell(0).getNumericCellValue()));
             newTechnologySavings = newTechnologySavings.add(BigDecimal.valueOf(sheet1.getRow(16).getCell(0).getNumericCellValue()));
+            newClothingSavings = newClothingSavings.add(BigDecimal.valueOf(sheet1.getRow(18).getCell(0).getNumericCellValue()));
 
             charityFunds = charityFunds.add(BigDecimal.valueOf(sheet1.getRow(8).getCell(2).getNumericCellValue()));
             transportationFunds = transportationFunds.add(BigDecimal.valueOf(sheet1.getRow(10).getCell(2).getNumericCellValue()));
@@ -240,6 +252,7 @@ public class WelcomeController implements Initializable {
             sheet1.getRow(12).getCell(0).setCellValue(realEstateSavings.doubleValue());
             sheet1.getRow(14).getCell(0).setCellValue(futureTravelSavings.doubleValue());
             sheet1.getRow(16).getCell(0).setCellValue(newTechnologySavings.doubleValue());
+            sheet1.getRow(18).getCell(0).setCellValue(newClothingSavings.doubleValue());
 
             sheet1.getRow(8).getCell(2).setCellValue(charityFunds.doubleValue());
             sheet1.getRow(10).getCell(2).setCellValue(transportationFunds.doubleValue());
@@ -276,6 +289,7 @@ public class WelcomeController implements Initializable {
             tfRealEstateSavings.setText(String.format("$%,4.2f", realEstateSavings));
             tfFutureTravelSavings.setText(String.format("$%,4.2f", futureTravelSavings));
             tfNewTechnologySavings.setText(String.format("$%,4.2f", newTechnologySavings));
+            tfNewClothingSavings.setText(String.format("$%,4.2f", newClothingSavings));
             tfCharityFunds.setText(String.format("$%,4.2f", charityFunds));
             tfTransportationFunds.setText(String.format("$%,4.2f", transportationFunds));
             tfFoodFunds.setText(String.format("$%,4.2f", foodFunds));

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/src/main/java/controller/legacy" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/main/java/io/github/amorehead/legacy" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">

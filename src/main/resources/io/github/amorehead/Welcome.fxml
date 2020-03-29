@@ -1,7 +1,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<GridPane fx:controller="controller.WelcomeController"
+<GridPane fx:controller="io.github.amorehead.WelcomeController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <padding>
         <Insets bottom="10" left="25" right="25" top="25"/>
@@ -65,29 +65,34 @@
                GridPane.rowIndex="14" editable="false"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="15"
-           text="New Charity Total in Checking Account:"/>
-    <TextField id="tfCharityFunds" fx:id="tfCharityFunds" GridPane.columnIndex="1"
+           text="New Clothing Savings Total:"/>
+    <TextField id="tfNewClothingSavings" fx:id="tfNewClothingSavings" GridPane.columnIndex="1"
                GridPane.rowIndex="15" editable="false"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="16"
-           text="New Transportation Total in Checking Account:"/>
-    <TextField id="tfTransportationFunds" fx:id="tfTransportationFunds" GridPane.columnIndex="1"
+           text="New Charity Total in Checking Account:"/>
+    <TextField id="tfCharityFunds" fx:id="tfCharityFunds" GridPane.columnIndex="1"
                GridPane.rowIndex="16" editable="false"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="17"
-           text="New Food and Groceries Total in Checking Account:"/>
-    <TextField id="tfFoodFunds" fx:id="tfFoodFunds" GridPane.columnIndex="1"
+           text="New Transportation Total in Checking Account:"/>
+    <TextField id="tfTransportationFunds" fx:id="tfTransportationFunds" GridPane.columnIndex="1"
                GridPane.rowIndex="17" editable="false"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="18"
-           text="New Entertainment Total in Checking Account:"/>
-    <TextField id="tfEntertainmentFunds" fx:id="tfEntertainmentFunds" GridPane.columnIndex="1"
+           text="New Food and Groceries Total in Checking Account:"/>
+    <TextField id="tfFoodFunds" fx:id="tfFoodFunds" GridPane.columnIndex="1"
                GridPane.rowIndex="18" editable="false"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="19"
+           text="New Entertainment Total in Checking Account:"/>
+    <TextField id="tfEntertainmentFunds" fx:id="tfEntertainmentFunds" GridPane.columnIndex="1"
+               GridPane.rowIndex="19" editable="false"/>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="20"
            text="New Unplanned Expenses Total in Checking Account:"/>
     <TextField id="tfUnplannedExpenseFunds" fx:id="tfUnplannedExpenseFunds" GridPane.columnIndex="1"
-               GridPane.rowIndex="19" editable="false"/>
+               GridPane.rowIndex="20" editable="false"/>
 
     <Label id="errorLabel" fx:id="errorLabel" GridPane.columnIndex="0" GridPane.rowIndex="22"/>
     <HBox alignment="bottom_center" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="22">
