@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ffe19c3-4d47-4a8b-916e-dc8a2779f713" name="Default Changelist" comment="" />
+    <list default="true" id="3ffe19c3-4d47-4a8b-916e-dc8a2779f713" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,12 +22,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZoqR2bPOjofrnVYzui6subq25X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -70,34 +78,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585515782539</updated>
-      <workItem from="1585515783785" duration="831000" />
+      <workItem from="1585515783785" duration="1076000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl" timestamp="1585516363508">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="735" y="291" width="424" height="482" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585516363508" />
-    <state width="1350" height="240" key="GridCell.Tab.0.bottom" timestamp="1585516649884">
+    <state width="1350" height="240" key="GridCell.Tab.0.bottom" timestamp="1585517001093">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585516649884" />
-    <state width="1350" height="240" key="GridCell.Tab.0.center" timestamp="1585516649882">
+    <state width="1350" height="240" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001093" />
+    <state width="1350" height="240" key="GridCell.Tab.0.center" timestamp="1585517001092">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585516649882" />
-    <state width="1350" height="240" key="GridCell.Tab.0.left" timestamp="1585516649881">
+    <state width="1350" height="240" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001092" />
+    <state width="1350" height="240" key="GridCell.Tab.0.left" timestamp="1585517001092">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585516649881" />
-    <state width="1350" height="240" key="GridCell.Tab.0.right" timestamp="1585516649883">
+    <state width="1350" height="240" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001092" />
+    <state width="1350" height="240" key="GridCell.Tab.0.right" timestamp="1585517001093">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1350" height="240" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585516649883" />
+    <state width="1350" height="240" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585517001093" />
     <state x="440" y="112" width="1024" height="843" key="SettingsEditor" timestamp="1585516597696">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
