@@ -170,7 +170,7 @@ public class WelcomeController implements Initializable {
                 .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
 
         // This calculates the amount to be allotted from savings toward new clothing.
-        BigDecimal newClothingSavings = savingsTotal.multiply(BigDecimal.valueOf(newTechnologySavingsRatio));
+        BigDecimal newClothingSavings = savingsTotal.multiply(BigDecimal.valueOf(newClothingSavingsRatio));
 
 
         // Checking Account Percentages //
