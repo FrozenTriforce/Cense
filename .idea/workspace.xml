@@ -1,132 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="20273874-4490-4deb-aac1-ece2b4edee3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cense.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cense.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" />
+    <list default="true" id="7be97627-5be6-4b8c-9995-3290bc080841" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/Cense.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/censeDebugger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/censeSwing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cense.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alexm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/alexm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alexm.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cense.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Cense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/legacy/Cense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/legacy/censeDebugger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/legacy/censeDebugger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/legacy/censeSwing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/legacy/censeSwing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WelcomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/Cense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/censeDebugger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/censeSwing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Welcome.fxml" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/CenseApp">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Cense" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Cense" type="f1a62948:ProjectNode" />
+                <item name="CenseApp" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Cense" type="f1a62948:ProjectNode" />
+                <item name="CenseApp" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Cense" type="f1a62948:ProjectNode" />
+                <item name="CenseApp" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectId" id="1bMN7isQ6C8LLNmwtweLgsXatCv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="ProjectId" id="1VwbID8QLaagSnlgvvUlTFfdUQw" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.11724138" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/controller" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JAR Application.Cense.jar (1)">
-    <configuration name="Cense" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.legacy.Cense" />
-      <module name="Cense" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.legacy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.Main" />
-      <module name="Cense" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Cense.jar (1)" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Cense/Cense.jar" />
+  <component name="RunManager" selected="Gradle.Cense:CenseApp [run]">
+    <configuration name="Cense:CenseApp [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CenseApp" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Cense.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Cense_jar/Cense.jar" />
+    <configuration name="Cense:CenseApp [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CenseApp" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Cense:CenseApp [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CenseApp" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Cense:CenseApp [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CenseApp" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Cense.jar (1)" />
-        <item itemvalue="JAR Application.Cense.jar" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Cense" />
+        <item itemvalue="Gradle.Cense:CenseApp [run]" />
+        <item itemvalue="Gradle.Cense:CenseApp [buildNeeded]" />
+        <item itemvalue="Gradle.Cense:CenseApp [assemble]" />
+        <item itemvalue="Gradle.Cense:CenseApp [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -135,17 +222,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20273874-4490-4deb-aac1-ece2b4edee3a" name="Default Changelist" comment="" />
-      <created>1578167022271</created>
+      <changelist id="7be97627-5be6-4b8c-9995-3290bc080841" name="Default Changelist" comment="" />
+      <created>1588437836371</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578167022271</updated>
-      <workItem from="1578167023638" duration="8625000" />
+      <updated>1588437836371</updated>
+      <workItem from="1588437838350" duration="6376000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,5 +244,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="742" y="312" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588443828166">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="742" y="312" width="424" height="482" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1588443828166" />
+    <state width="1870" height="276" key="GridCell.Tab.0.bottom" timestamp="1588444213552">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="276" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1588444213552" />
+    <state width="1870" height="276" key="GridCell.Tab.0.center" timestamp="1588444213551">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="276" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1588444213551" />
+    <state width="1870" height="276" key="GridCell.Tab.0.left" timestamp="1588444213550">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="276" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1588444213550" />
+    <state width="1870" height="276" key="GridCell.Tab.0.right" timestamp="1588444213551">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1870" height="276" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1588444213551" />
+    <state x="717" y="398" width="476" height="399" key="NewModule_or_Project.wizard" timestamp="1588437845902">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="717" y="398" width="476" height="399" key="NewModule_or_Project.wizard/0.28.1920.1052@0.28.1920.1052" timestamp="1588437845902" />
+    <state x="441" y="189" width="1024" height="843" key="SettingsEditor" timestamp="1588443830113">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="441" y="189" width="1024" height="843" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1588443830113" />
+    <state x="641" y="120" width="638" height="867" key="find.popup" timestamp="1588444027092">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="641" y="120" width="638" height="867" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1588444027092" />
   </component>
 </project>

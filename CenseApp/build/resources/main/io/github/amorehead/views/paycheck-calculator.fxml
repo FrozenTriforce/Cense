@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<View fx:id="welcome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="350.0" stylesheets="@paycheck-calculator.css" xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.amorehead.views.PaycheckCalculatorPresenter">
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="25"/>
+    </padding>
+
+    <GridPane>
+        <Label text="Enter Gross Income for Current Paycheck:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField id="tfGrossIncomeTotal" fx:id="tfGrossIncomeTotal" text="\$0.00" GridPane.columnIndex="1"
+                   GridPane.rowIndex="0"/>
+
+        <Label text="Enter Net Income for Current Paycheck:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField id="tfNetIncomeTotal" fx:id="tfNetIncomeTotal" text="\$0.00" GridPane.columnIndex="1"
+                   GridPane.rowIndex="1"/>
+
+        <Label text="Tithe Total for Current Paycheck:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField id="tfTitheTotal" fx:id="tfTitheTotal" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="5"/>
+
+        <Label text="Total Amount from Current Paycheck for Savings Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="6"/>
+        <TextField id="tfSavingsTotal" fx:id="tfSavingsTotal" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="6"/>
+
+        <Label text="Total Amount from Current Paycheck for Checking Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="7"/>
+        <TextField id="tfCheckingTotal" fx:id="tfCheckingTotal" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="7"/>
+
+        <Label text="New Retirement Contribution Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+        <TextField id="tfRetirementSavings" fx:id="tfRetirementSavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="8"/>
+
+        <Label text="New Car Replacement Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+        <TextField id="tfCarReplacementSavings" fx:id="tfCarReplacementSavings" editable="false"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="9"/>
+
+        <Label text="New Car Maintenance/Repair Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+        <TextField id="tfCarMaintenanceAndRepairSavings" fx:id="tfCarMaintenanceAndRepairSavings" editable="false"
+                   GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+
+        <Label text="New Emergency Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+        <TextField id="tfEmergencySavings" fx:id="tfEmergencySavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="11"/>
+
+        <Label text="New Real Estate Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+        <TextField id="tfRealEstateSavings" fx:id="tfRealEstateSavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="12"/>
+
+        <Label text="New Future Travel Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="13"/>
+        <TextField id="tfFutureTravelSavings" fx:id="tfFutureTravelSavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="13"/>
+
+        <Label text="New Technology Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="14"/>
+        <TextField id="tfNewTechnologySavings" fx:id="tfNewTechnologySavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="14"/>
+
+        <Label text="New Clothing Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="15"/>
+        <TextField id="tfNewClothingSavings" fx:id="tfNewClothingSavings" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="15"/>
+
+        <Label text="New Charity Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="16"/>
+        <TextField id="tfCharityFunds" fx:id="tfCharityFunds" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="16"/>
+
+        <Label text="New Transportation Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="17"/>
+        <TextField id="tfTransportationFunds" fx:id="tfTransportationFunds" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="17"/>
+
+        <Label text="New Food and Groceries Total in Checking Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="18"/>
+        <TextField id="tfFoodFunds" fx:id="tfFoodFunds" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="18"/>
+
+        <Label text="New Entertainment Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="19"/>
+        <TextField id="tfEntertainmentFunds" fx:id="tfEntertainmentFunds" editable="false" GridPane.columnIndex="1"
+                   GridPane.rowIndex="19"/>
+
+        <Label text="New Unplanned Expenses Total in Checking Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="20"/>
+        <TextField id="tfUnplannedExpenseFunds" fx:id="tfUnplannedExpenseFunds" editable="false"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="20"/>
+
+        <Label id="errorLabel" fx:id="errorLabel" GridPane.columnIndex="0" GridPane.rowIndex="22"/>
+        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="22">
+            <Button onAction="#handleDistributeFundsClick" text="Distribute Funds"/>
+        </HBox>
+    </GridPane>
+</View>
