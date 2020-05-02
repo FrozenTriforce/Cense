@@ -25,29 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be97627-5be6-4b8c-9995-3290bc080841" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/Cense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/CenseDebugger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CenseApp/src/main/java/io/github/amorehead/legacy/CenseSwing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cense.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alexm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WelcomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/Cense.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/censeDebugger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/legacy/censeSwing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Welcome.fxml" beforeDir="false" />
-    </list>
+    <list default="true" id="7be97627-5be6-4b8c-9995-3290bc080841" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +204,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588437836371</updated>
-      <workItem from="1588437838350" duration="6705000" />
+      <workItem from="1588437838350" duration="7011000" />
     </task>
     <servers />
   </component>
