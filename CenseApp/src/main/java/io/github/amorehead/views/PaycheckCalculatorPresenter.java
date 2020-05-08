@@ -22,6 +22,7 @@ public class PaycheckCalculatorPresenter {
 
     @FXML
     private View welcome;
+
     @FXML
     private TextField tfGrossIncomeTotal;
     @FXML
@@ -48,6 +49,8 @@ public class PaycheckCalculatorPresenter {
     private TextField tfNewTechnologySavings;
     @FXML
     private TextField tfNewClothingSavings;
+    @FXML
+    private TextField tfRentPaymentSavings;
 
     @FXML
     private TextField tfCharityFunds;
@@ -63,8 +66,7 @@ public class PaycheckCalculatorPresenter {
     @FXML
     private Label errorLabel;
 
-    private Stage stage;
-    private FileChooser fileChooser = new FileChooser();
+    private final FileChooser fileChooser = new FileChooser();
     private File spreadsheet;
     private FileInputStream fileInputStream = null;
     private FileOutputStream fileOutputStream = null;
@@ -91,7 +93,7 @@ public class PaycheckCalculatorPresenter {
 
         // The following displays to users an initial pop-up window for selecting an Excel spreadsheet file.
         fileChooser.setTitle("Open Excel Spreadsheet");
-        spreadsheet = fileChooser.showOpenDialog(this.stage);
+        spreadsheet = fileChooser.showOpenDialog(new Stage());
 
         // The following try-catch blocks are for spreadsheet I/O to an Excel spreadsheet.
         try {
@@ -126,10 +128,14 @@ public class PaycheckCalculatorPresenter {
         BigDecimal adjustmentAmount = netIncomeTotal.subtract(titheTotal);
 
         // This calculates the amount to be allotted to a savings account.
-        BigDecimal savingsTotal = adjustmentAmount.multiply(BigDecimal.valueOf(0.80));
+        double savingsAccountRatio = Double.parseDouble(sheet1.getRow(0).getCell(0)
+                .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
+        BigDecimal savingsTotal = adjustmentAmount.multiply(BigDecimal.valueOf(savingsAccountRatio));
 
         // This calculates the amount to be allotted to a checking account.
-        BigDecimal checkingTotal = adjustmentAmount.multiply(BigDecimal.valueOf(0.20));
+        double checkingAccountRatio = Double.parseDouble(sheet1.getRow(0).getCell(2)
+                .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
+        BigDecimal checkingTotal = adjustmentAmount.multiply(BigDecimal.valueOf(checkingAccountRatio));
 
 
         // Savings Account Percentages //
@@ -191,6 +197,13 @@ public class PaycheckCalculatorPresenter {
         // This calculates the amount to be allotted from savings toward new clothing.
         BigDecimal newClothingSavings = savingsTotal.multiply(BigDecimal.valueOf(newClothingSavingsRatio));
 
+        // This defines the ratio for this particular field.
+        double rentPaymentSavingsRatio = Double.parseDouble(sheet1.getRow(19).getCell(0)
+                .getStringCellValue().split("\\(")[1].replaceAll("%", "").replaceAll("\\)", "")) / 100;
+
+        // This calculates the amount to be allotted from savings toward a monthly rent payment.
+        BigDecimal rentPaymentSavings = savingsTotal.multiply(BigDecimal.valueOf(rentPaymentSavingsRatio));
+
 
         // Checking Account Percentages //
 
@@ -236,8 +249,9 @@ public class PaycheckCalculatorPresenter {
 
 
         // The following checks to ensure that the user's spreadsheet ratios add up to 100%.
-        if ((retirementSavingsRatio + carReplacementSavingsRatio + carMaintenanceAndRepairSavingsRatio + emergencySavingsRatio +
-                realEstateSavingsRatio + futureTravelSavingsRatio + newTechnologySavingsRatio + newClothingSavingsRatio != 1.0)
+        if ((retirementSavingsRatio + carReplacementSavingsRatio + carMaintenanceAndRepairSavingsRatio +
+                emergencySavingsRatio + realEstateSavingsRatio + futureTravelSavingsRatio +
+                newTechnologySavingsRatio + newClothingSavingsRatio + rentPaymentSavingsRatio != 1.0)
                 || (charityFundsRatio + transportationFundsRatio + foodFundsRatio + entertainmentFundsRatio + unplannedExpenseFundsRatio != 1.0)) {
             errorLabel.setText("Error: Account ratios do not balance to 100%.");
             errorLabel.setTextFill(Color.ORANGERED);
@@ -255,6 +269,7 @@ public class PaycheckCalculatorPresenter {
             futureTravelSavings = futureTravelSavings.add(BigDecimal.valueOf(sheet1.getRow(14).getCell(0).getNumericCellValue()));
             newTechnologySavings = newTechnologySavings.add(BigDecimal.valueOf(sheet1.getRow(16).getCell(0).getNumericCellValue()));
             newClothingSavings = newClothingSavings.add(BigDecimal.valueOf(sheet1.getRow(18).getCell(0).getNumericCellValue()));
+            rentPaymentSavings = rentPaymentSavings.add(BigDecimal.valueOf(sheet1.getRow(20).getCell(0).getNumericCellValue()));
 
             charityFunds = charityFunds.add(BigDecimal.valueOf(sheet1.getRow(6).getCell(2).getNumericCellValue()));
             transportationFunds = transportationFunds.add(BigDecimal.valueOf(sheet1.getRow(8).getCell(2).getNumericCellValue()));
@@ -272,6 +287,7 @@ public class PaycheckCalculatorPresenter {
             sheet1.getRow(14).getCell(0).setCellValue(futureTravelSavings.doubleValue());
             sheet1.getRow(16).getCell(0).setCellValue(newTechnologySavings.doubleValue());
             sheet1.getRow(18).getCell(0).setCellValue(newClothingSavings.doubleValue());
+            sheet1.getRow(20).getCell(0).setCellValue(rentPaymentSavings.doubleValue());
 
             sheet1.getRow(6).getCell(2).setCellValue(charityFunds.doubleValue());
             sheet1.getRow(8).getCell(2).setCellValue(transportationFunds.doubleValue());
@@ -299,8 +315,10 @@ public class PaycheckCalculatorPresenter {
             tfGrossIncomeTotal.setText((String.format("$%,4.2f", grossIncomeTotal)));
             tfNetIncomeTotal.setText((String.format("$%,4.2f", netIncomeTotal)));
             tfTitheTotal.setText(String.format("$%,4.2f", titheTotal));
+
             tfSavingsTotal.setText(String.format("$%,4.2f", savingsTotal));
             tfCheckingTotal.setText(String.format("$%,4.2f", checkingTotal));
+
             tfRetirementSavings.setText(String.format("$%,4.2f", retirementSavings));
             tfCarReplacementSavings.setText(String.format("$%,4.2f", carReplacementSavings));
             tfCarMaintenanceAndRepairSavings.setText(String.format("$%,4.2f", carMaintenanceAndRepairSavings));
@@ -309,6 +327,8 @@ public class PaycheckCalculatorPresenter {
             tfFutureTravelSavings.setText(String.format("$%,4.2f", futureTravelSavings));
             tfNewTechnologySavings.setText(String.format("$%,4.2f", newTechnologySavings));
             tfNewClothingSavings.setText(String.format("$%,4.2f", newClothingSavings));
+            tfRentPaymentSavings.setText(String.format("$%,4.2f", rentPaymentSavings));
+
             tfCharityFunds.setText(String.format("$%,4.2f", charityFunds));
             tfTransportationFunds.setText(String.format("$%,4.2f", transportationFunds));
             tfFoodFunds.setText(String.format("$%,4.2f", foodFunds));

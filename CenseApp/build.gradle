@@ -35,6 +35,9 @@ jfxmobile {
         compileSdkVersion = 29
         buildToolsVersion = '29.0.0'
         androidSdk = '/home/alexm/snap/androidsdk/23/AndroidSDK/'
+        dexOptions {
+            keepRuntimeAnnotatedClasses false
+        }
     }
     ios {
         infoPList = file('src/ios/Default-Info.plist')

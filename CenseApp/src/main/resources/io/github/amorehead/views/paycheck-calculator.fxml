@@ -5,7 +5,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <View fx:id="welcome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="600.0" prefWidth="350.0" stylesheets="@paycheck-calculator.css" xmlns="http://javafx.com/javafx/8.0.171"
+      prefHeight="600.0" prefWidth="350.0" stylesheets="@paycheck-calculator.css"
+      xmlns="http://javafx.com/javafx/8.0.171"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.amorehead.views.PaycheckCalculatorPresenter">
     <padding>
         <Insets bottom="10" left="25" right="25" top="25"/>
@@ -67,31 +68,35 @@
         <TextField id="tfNewClothingSavings" fx:id="tfNewClothingSavings" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="15"/>
 
-        <Label text="New Charity Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="16"/>
-        <TextField id="tfCharityFunds" fx:id="tfCharityFunds" editable="false" GridPane.columnIndex="1"
+        <Label text="New Rent Payment Savings Total:" GridPane.columnIndex="0" GridPane.rowIndex="16"/>
+        <TextField id="tfRentPaymentSavings" fx:id="tfRentPaymentSavings" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="16"/>
 
-        <Label text="New Transportation Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="17"/>
-        <TextField id="tfTransportationFunds" fx:id="tfTransportationFunds" editable="false" GridPane.columnIndex="1"
+        <Label text="New Charity Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="17"/>
+        <TextField id="tfCharityFunds" fx:id="tfCharityFunds" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="17"/>
 
-        <Label text="New Food and Groceries Total in Checking Account:" GridPane.columnIndex="0"
-               GridPane.rowIndex="18"/>
-        <TextField id="tfFoodFunds" fx:id="tfFoodFunds" editable="false" GridPane.columnIndex="1"
+        <Label text="New Transportation Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="18"/>
+        <TextField id="tfTransportationFunds" fx:id="tfTransportationFunds" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="18"/>
 
-        <Label text="New Entertainment Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="19"/>
-        <TextField id="tfEntertainmentFunds" fx:id="tfEntertainmentFunds" editable="false" GridPane.columnIndex="1"
+        <Label text="New Food and Groceries Total in Checking Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="19"/>
+        <TextField id="tfFoodFunds" fx:id="tfFoodFunds" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="19"/>
 
-        <Label text="New Unplanned Expenses Total in Checking Account:" GridPane.columnIndex="0"
-               GridPane.rowIndex="20"/>
-        <TextField id="tfUnplannedExpenseFunds" fx:id="tfUnplannedExpenseFunds" editable="false"
-                   GridPane.columnIndex="1"
+        <Label text="New Entertainment Total in Checking Account:" GridPane.columnIndex="0" GridPane.rowIndex="20"/>
+        <TextField id="tfEntertainmentFunds" fx:id="tfEntertainmentFunds" editable="false" GridPane.columnIndex="1"
                    GridPane.rowIndex="20"/>
 
-        <Label id="errorLabel" fx:id="errorLabel" GridPane.columnIndex="0" GridPane.rowIndex="22"/>
-        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="22">
+        <Label text="New Unplanned Expenses Total in Checking Account:" GridPane.columnIndex="0"
+               GridPane.rowIndex="21"/>
+        <TextField id="tfUnplannedExpenseFunds" fx:id="tfUnplannedExpenseFunds" editable="false"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="21"/>
+
+        <Label id="errorLabel" fx:id="errorLabel" GridPane.columnIndex="0" GridPane.rowIndex="23"/>
+        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="23">
             <Button onAction="#handleDistributeFundsClick" text="Distribute Funds"/>
         </HBox>
     </GridPane>
