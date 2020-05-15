@@ -21,7 +21,7 @@ public class DrawerManager {
         NavigationDrawer drawer = app.getDrawer();
 
         NavigationDrawer.Header header = new NavigationDrawer.Header("Cense",
-                "Version 2.0.0",
+                "Version 1.0.0",
                 new Avatar(21, new Image(DrawerManager.class.getResourceAsStream("/icon.png"))));
         drawer.setHeader(header);
 
